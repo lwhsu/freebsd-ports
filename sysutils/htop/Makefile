@@ -2,7 +2,7 @@
 
 PORTNAME=	htop
 DISTVERSION=	3.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	gaod@hychen.org
@@ -13,6 +13,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		autoreconf compiler:c11 libtool localbase ncurses pkgconfig \
 		python:build shebangfix
+
+BUILD_DEPENDS+=	libgnuregex>=6.0:devel/libgnuregex
+RUN_DEPENDS+=	${BUILD_DEPENDS}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	htop-dev
