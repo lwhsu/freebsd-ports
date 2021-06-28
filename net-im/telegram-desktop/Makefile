@@ -1,6 +1,5 @@
 PORTNAME=	telegram-desktop
-DISTVERSION=	2.7.4
-PORTREVISION=	1
+DISTVERSION=	2.8.1
 CATEGORIES=	net-im
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/v${DISTVERSION}/
 DISTNAME=	tdesktop-${DISTVERSION}-full
@@ -35,6 +34,7 @@ LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg \
 		libopenal.so:audio/openal-soft \
 		libopus.so:audio/opus \
 		libqrcodegencpp.so:graphics/qr-code-generator \
+		librnnoise.so:audio/rnnoise \
 		libusrsctp.so:net/libusrsctp \
 		libxkbcommon.so:x11/libxkbcommon \
 		libxxhash.so:devel/xxhash
@@ -81,7 +81,7 @@ GTK_DESC=	Gtk integration (Use Gtk dialogs, etc.)
 
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 GTK_CMAKE_BOOL_OFF=	DESKTOP_APP_DISABLE_GTK_INTEGRATION
-GTK_LIB_DEPENDS=	libwebkit2gtk-4.0.so:www/webkit2-gtk3
+GTK_LIB_DEPENDS=	libwebkit2gtk-4.0.so.37:www/webkit2-gtk3
 GTK_USE=	GNOME=gtk30
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 
