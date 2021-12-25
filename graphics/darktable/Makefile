@@ -1,8 +1,7 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
 
 PORTNAME=	darktable
-PORTVERSION=	3.6.1
-PORTREVISION=	2
+PORTVERSION=	3.8.0
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/darktable-org/${PORTNAME}/releases/download/release-${PORTVERSION:C/\.rc/rc/}/
 
@@ -25,6 +24,7 @@ LIB_DEPENDS=	libcolord-gtk.so:graphics/colord-gtk \
 		libexiv2.so:graphics/exiv2 \
 		libharfbuzz.so:print/harfbuzz \
 		libicui18n.so:devel/icu \
+		libjasper.so:graphics/jasper \
 		libjson-glib-1.0.so:devel/json-glib \
 		liblcms2.so:graphics/lcms2 \
 		liblensfun.so:graphics/lensfun \
@@ -39,11 +39,12 @@ LIB_DEPENDS=	libcolord-gtk.so:graphics/colord-gtk \
 # libraries.  Once this regression has been fixed upstream, this can be
 # switched back to USES=cmake, and LTO can be re-enabled.
 USES=		cmake:noninja compiler:c++14-lang desktop-file-utils gl gnome jpeg \
-		perl5 pkgconfig shebangfix sqlite tar:xz xorg
+		perl5 pkgconfig sdl shebangfix sqlite tar:xz xorg
 OPTIONS_EXCLUDE=LTO
-USE_GL=		glu
+USE_GL=		gl
 USE_GNOME=	cairo gtk30 intltool librsvg2 libxml2
 USE_LDCONFIG=	${PREFIX}/lib/${PORTNAME}
+USE_SDL=	sdl2
 USE_XORG=	ice sm x11 xext xrandr
 
 SHEBANG_FILES=	tools/*.sh
