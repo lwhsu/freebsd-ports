@@ -9,8 +9,10 @@ COMMENT=	Command-line JSON viewer
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cargo localbase:ldflags xorg
+USES=		cargo localbase:ldflags xorg python:build
 USE_XORG=	xcb
+
+BUILD_DEPENDS=	python3>0:lang/python3
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	PaulJuliusMartinez
