@@ -9,7 +9,8 @@ COMMENT=	Command-line JSON viewer
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cargo
+USES=		cargo localbase:ldflags xorg
+USE_XORG=	xcb
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	PaulJuliusMartinez
