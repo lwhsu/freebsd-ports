@@ -1107,6 +1107,7 @@
     SUBDIR += kms-cmake-utils
     SUBDIR += kodi-platform
     SUBDIR += kokkos
+    SUBDIR += kommit
     SUBDIR += kore
     SUBDIR += kpublictransport
     SUBDIR += kronosnet
