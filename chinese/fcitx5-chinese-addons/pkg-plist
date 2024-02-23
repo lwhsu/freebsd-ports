@@ -15,6 +15,7 @@ lib/fcitx5/libpinyin.so
 lib/fcitx5/libpinyinhelper.so
 lib/fcitx5/libpunctuation.so
 lib/fcitx5/libtable.so
+lib/fcitx5/qt5/libcustomphraseeditor.so
 lib/fcitx5/qt5/libpinyindictmanager.so
 share/fcitx5/addon/chttrans.conf
 share/fcitx5/addon/cloudpinyin.conf

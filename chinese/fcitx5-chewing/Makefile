@@ -1,5 +1,5 @@
 PORTNAME=	fcitx5-chewing
-DISTVERSION=	5.0.14
+DISTVERSION=	5.1.1
 CATEGORIES=	chinese textproc
 MASTER_SITES=	https://download.fcitx-im.org/fcitx5/${PORTNAME}/
 

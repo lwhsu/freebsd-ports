@@ -1,6 +1,5 @@
 PORTNAME=	fcitx5-configtool
-DISTVERSION=	5.0.17
-PORTREVISION=	2
+DISTVERSION=	5.1.3
 CATEGORIES=	textproc x11
 MASTER_SITES=	https://download.fcitx-im.org/fcitx5/${PORTNAME}/
 
@@ -25,9 +24,9 @@ USES=		cmake compiler:c++17-lang gettext-tools kde:5 pkgconfig qt:5 \
 
 PLIST_SUB=	VER=${PORTVERSION}
 
-USE_KDE=	config coreaddons ecm i18n iconthemes itemviews kdeclarative \
+USE_KDE=	config coreaddons ecm i18n iconthemes itemviews \
 		kirigami2 package plasma-framework service widgetsaddons
-USE_QT=		concurrent core dbus declarative gui quickcontrols2 widgets \
+USE_QT=		concurrent core dbus declarative gui widgets \
 		x11extras buildtools:build qmake:build
 USE_XORG=	x11 xkbfile
 USE_LDCONFIG=	yes

@@ -1,6 +1,5 @@
 PORTNAME=	fcitx5-chinese-addons
-DISTVERSION=	5.0.17
-PORTREVISION=	6
+DISTVERSION=	5.1.3
 CATEGORIES=	chinese textproc
 MASTER_SITES=	https://download.fcitx-im.org/fcitx5/${PORTNAME}/ \
 		https://download.fcitx-im.org/data/:py_stroke,py_table
@@ -40,6 +39,7 @@ GUI_LIB_DEPENDS=	libFcitx5Qt5DBusAddons.so:textproc/fcitx5-qt
 GUI_CMAKE_ON=	-DUSE_WEBKIT:BOOL=false
 
 USE_KDE=	ecm
+USE_QT=		core gui network widgets
 
 CMAKE_ON=	ENABLE_OPENCC
 CMAKE_OFF=	ENABLE_TEST

@@ -1,5 +1,5 @@
 PORTNAME=	fcitx5-anthy
-DISTVERSION=	5.0.14
+DISTVERSION=	5.1.3
 CATEGORIES=	japanese textproc
 MASTER_SITES=	https://download.fcitx-im.org/fcitx5/${PORTNAME}/
 
