@@ -35,7 +35,7 @@ USE_LDCONFIG=	yes
 GUI_DESC=	Configuration GUI
 GUI_USES=	qt:5
 GUI_USE=	qt=concurrent,dbus,webengine,buildtools:build,qmake:build
-GUI_LIB_DEPENDS=	libFcitx5Qt5DBusAddons.so:textproc/fcitx5-qt
+GUI_LIB_DEPENDS=	libFcitx5Qt5DBusAddons.so:textproc/fcitx5-qt@qt5
 GUI_CMAKE_ON=	-DUSE_WEBKIT:BOOL=false
 
 USE_KDE=	ecm
