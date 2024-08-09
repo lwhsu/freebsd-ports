@@ -7,6 +7,7 @@ COMMENT=	Framework Computer System Utility
 WWW=		https://github.com/FrameworkComputer/framework-system
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 USES=		cargo
 

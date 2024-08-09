@@ -8,6 +8,7 @@ COMMENT=	Framework Computer QMK HID Utility
 WWW=		https://github.com/FrameworkComputer/qmk_hid
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 USES=		cargo
 
