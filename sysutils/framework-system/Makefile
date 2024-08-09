@@ -9,7 +9,9 @@ WWW=		https://github.com/FrameworkComputer/framework-system
 LICENSE=	BSD3CLAUSE
 
 USES=		cargo
+
 CPE_VENDOR=	${PORTNAME}_project
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	FrameworkComputer
 GH_PROJECT=	framework-system
