@@ -9,6 +9,8 @@ WWW=		https://github.com/FrameworkComputer/framework-system
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
+LIB_DEPENDS=	libhidapi.so:comms/hidapi
+
 USES=		cargo
 
 CPE_VENDOR=	${PORTNAME}_project
