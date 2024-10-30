@@ -30,6 +30,8 @@ CONFIGURE_ARGS=	--datadir=${PREFIX}/lib
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
+SUB_LIST=	VERSION=${DISTVERSION}
+
 .if ${MACHINE_CPU:Msse3}
 CONFIGURE_ENV+=	MOSH_OPTS="-msse3 -mfpmath=sse"
 .elif ${MACHINE_CPU:Msse2}
