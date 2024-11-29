@@ -1,0 +1,8 @@
+sshx lets you share your terminal with anyone by link, on a multiplayer
+infinite canvas.
+
+It has real-time collaboration, with remote cursors and chat. It's also fast
+and end-to-end encrypted, with a lightweight server written in Rust.
+
+Install sshx with a single command. Use it for teaching, debugging, or cloud
+access.

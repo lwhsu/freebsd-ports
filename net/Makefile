@@ -1536,6 +1536,7 @@
     SUBDIR += srelay
     SUBDIR += ss5
     SUBDIR += sshping
+    SUBDIR += sshx
     SUBDIR += ssldump
     SUBDIR += sslh
     SUBDIR += ssspl
