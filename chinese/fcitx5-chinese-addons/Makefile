@@ -48,7 +48,7 @@ MAKE_ENV=	FCITX5_DOWNLOAD_DISALLOWED=TRUE
 CONFLICTS_INSTALL=	zh-fcitx # share/icons/hicolor/16x16/apps/fcitx-fullwidth-active.png
 
 # These must follow modules/pinyinhelper/CMakeLists.txt
-PY_STROKE_VER=	20121124
+PY_STROKE_VER=	20250329
 PY_TABLE_VER=	20121124
 PY_STROKE_TAR=	py_stroke-${PY_STROKE_VER}.tar.gz
 PY_TABLE_TAR=	py_table-${PY_TABLE_VER}.tar.gz
