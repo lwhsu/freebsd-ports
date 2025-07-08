@@ -33,16 +33,15 @@ OPTIONS_DEFAULT=	GUI
 USE_LDCONFIG=	yes
 
 GUI_DESC=	Configuration GUI
-GUI_USES=	qt:5
-GUI_USE=	qt=concurrent,dbus,webengine,buildtools:build,qmake:build
-GUI_LIB_DEPENDS=	libFcitx5Qt5DBusAddons.so:textproc/fcitx5-qt@qt5
+GUI_USES=	qt:6
+GUI_USE=	qt=base
+GUI_LIB_DEPENDS=	libFcitx5Qt6DBusAddons.so:textproc/fcitx5-qt@qt6
 GUI_CMAKE_ON=	-DUSE_WEBKIT:BOOL=false
 
 USE_KDE=	ecm
-USE_QT=		core gui network widgets
 
 CMAKE_ON=	ENABLE_OPENCC
-CMAKE_OFF=	ENABLE_TEST USE_QT6
+CMAKE_OFF=	ENABLE_TEST
 MAKE_ENV=	FCITX5_DOWNLOAD_DISALLOWED=TRUE
 
 CONFLICTS_INSTALL=	zh-fcitx # share/icons/hicolor/16x16/apps/fcitx-fullwidth-active.png
