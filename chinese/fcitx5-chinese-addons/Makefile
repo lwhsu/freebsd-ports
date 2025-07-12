@@ -34,7 +34,7 @@ USE_LDCONFIG=	yes
 
 GUI_DESC=	Configuration GUI
 GUI_USES=	qt:6
-GUI_USE=	qt=base
+GUI_USE=	qt=base,webengine
 GUI_LIB_DEPENDS=	libFcitx5Qt6DBusAddons.so:textproc/fcitx5-qt@qt6
 GUI_CMAKE_ON=	-DUSE_WEBKIT:BOOL=false
 
